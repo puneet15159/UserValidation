@@ -39,5 +39,14 @@ namespace NUnitTestProject1
             Assert.True(check);
 
         }
+
+        [Test]
+        public void givenPassword_WhenProper_ShouldReturnTrue()
+        {
+            UserRegisteration user = new UserRegisteration();
+            bool check = user.validatePassword("adswdsed");
+            Assert.True(check);
+
+        }
     }
 }

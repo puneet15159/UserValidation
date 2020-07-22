@@ -21,5 +21,23 @@ namespace NUnitTestProject1
             Assert.True(check);
 
         }
+
+        [Test]
+        public void givenEmail_WhenProper_ShouldReturnTrue()
+        {
+            UserRegisteration user = new UserRegisteration();
+            bool check = user.validateEmail("puneet@gmail.com");
+            Assert.True(check);
+
+        }
+
+        [Test]
+        public void givenMobileNumber_WhenProper_ShouldReturnTrue()
+        {
+            UserRegisteration user = new UserRegisteration();
+            bool check = user.validateMobileNumber("91 9899787676");
+            Assert.True(check);
+
+        }
     }
 }

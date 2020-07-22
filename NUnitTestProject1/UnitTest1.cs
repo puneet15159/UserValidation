@@ -12,5 +12,14 @@ namespace NUnitTestProject1
             Assert.True(check);
 
         }
+
+        [Test]
+        public void givenLastName_WhenProper_ShouldReturnTrue()
+        {
+            UserRegisteration user = new UserRegisteration();
+            bool check = user.validateLastName("Puneet");
+            Assert.True(check);
+
+        }
     }
 }

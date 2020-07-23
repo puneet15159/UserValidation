@@ -11,7 +11,8 @@ namespace NUnitTestProject1
         Regex phoneNumberRegex = new Regex(@"[91]{1} [0-9]{10}");
         //Regex passwordRegex = new Regex(@"[a-zA-Z0-9]{8}");
         //Regex passwordRegex = new Regex(@"(?=.*[A-Z])");
-        Regex passwordRegex = new Regex(@"(?=.*\d)");
+        //Regex passwordRegex = new Regex(@"(?=.*\d)");
+        Regex passwordRegex = new Regex(@"(?=.{1}\W)");
         public Boolean validateFirstName(string fName)
         {
             return firstNameRegex.IsMatch(fName);

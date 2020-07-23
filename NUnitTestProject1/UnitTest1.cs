@@ -76,12 +76,12 @@ namespace NUnitTestProject1
         public void givenPassword_WhenProper_ShouldReturnTrue()
         {
             UserRegisteration user = new UserRegisteration();
-            bool isValid = user.validatePassword("adAwdse1d");
+            bool isValid = user.validatePassword("adAw@dse1d");
             Assert.True(isValid);
 
         }
 
-        public void givenPassword_WhenProper_ShouldReturnFalse()
+        public void givenPassword_WhenImProper_ShouldReturnFalse()
         {
             UserRegisteration user = new UserRegisteration();
             bool isValid = user.validatePassword("ads");

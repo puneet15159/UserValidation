@@ -2640,6 +2640,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "UserRegisteration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/UserRegisteration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserRegisteration.dll": {}
+        }
       }
     }
   },
@@ -8411,6 +8421,11 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "UserRegisteration/1.0.0": {
+      "type": "project",
+      "path": "../UserRegisteration/UserRegisteration.csproj",
+      "msbuildProject": "../UserRegisteration/UserRegisteration.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8418,6 +8433,7 @@
       "Microsoft.ApplicationInsights.WorkerService >= 2.13.1",
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "NUnit3TestAdapter >= 3.15.1",
+      "UserRegisteration >= 1.0.0",
       "nunit >= 3.12.0"
     ]
   },
@@ -8427,9 +8443,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\punee\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\NUnitTestProject1.csproj",
-      "projectName": "NUnitTestProject1",
-      "projectPath": "C:\\Users\\punee\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\NUnitTestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\punee\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\UnitTestingUserRegisteration.csproj",
+      "projectName": "UnitTestingUserRegisteration",
+      "projectPath": "C:\\Users\\punee\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\UnitTestingUserRegisteration.csproj",
       "packagesPath": "C:\\Users\\punee\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\punee\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
@@ -8446,7 +8462,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\punee\\source\\repos\\NUnitTestProject1\\UserRegisteration\\UserRegisteration.csproj": {
+              "projectPath": "C:\\Users\\punee\\source\\repos\\NUnitTestProject1\\UserRegisteration\\UserRegisteration.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

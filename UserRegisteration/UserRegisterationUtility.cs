@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace NUnitTestProject1
+namespace UserRegisteration
 {
-    class UserRegisteration
+    public class UserRegisterationUtility
     {
         Regex firstNameRegex = new Regex(@"[A-Z]{1}[a-z]{2,}");
         Regex lastNameRegex = new Regex(@"[A-Z]{1}[a-z]{2,}");
@@ -19,22 +19,22 @@ namespace NUnitTestProject1
             
         }
 
-        internal bool validateLastName(string lName)
+        public bool validateLastName(string lName)
         {
             return lastNameRegex.IsMatch(lName);
         }
 
-        internal bool validateEmail(string email)
+        public bool validateEmail(string email)
         {
             return emailRegex.IsMatch(email);
         }
 
-        internal bool validateMobileNumber(string phoneNumber)
+        public bool validateMobileNumber(string phoneNumber)
         {
             return phoneNumberRegex.IsMatch(phoneNumber);
         }
 
-        internal bool validatePassword(string password)
+        public bool validatePassword(string password)
         {
             return passwordRegex.IsMatch(password);
         }

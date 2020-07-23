@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4utIn1dRgBDkvscG0+9wii933Xxyok1Ccjw+hBOaXsL87X8cXGPpe3pWJ2mTojUURv76zhDuYyPpcXq63e2JiQ==",
+  "dgSpecHash": "7YFN3zJ4rseI81hOIyougyYbiCPPR3XQvHxXO5JfxV2QzcpPWlwyHsyy/GuE/OtYZIw1aJZM1tcTqGOWGEyu6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\punee\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\NUnitTestProject1.csproj",
+  "projectFilePath": "C:\\Users\\punee\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\UnitTestingUserRegisteration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\punee\\.nuget\\packages\\microsoft.applicationinsights\\2.13.1\\microsoft.applicationinsights.2.13.1.nupkg.sha512",
     "C:\\Users\\punee\\.nuget\\packages\\microsoft.applicationinsights.dependencycollector\\2.13.1\\microsoft.applicationinsights.dependencycollector.2.13.1.nupkg.sha512",

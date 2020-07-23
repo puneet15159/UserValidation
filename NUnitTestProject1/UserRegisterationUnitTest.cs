@@ -1,13 +1,14 @@
 using NUnit.Framework;
 
-namespace NUnitTestProject1
+namespace UnitTestingUserRegisteration
+
 {
     public class Tests
     {
         [Test]
         public void givenFirstName_WhenProper_ShouldReturnTrue()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
             bool isValid = user.validateFirstName("Puneet");
             Assert.True(isValid);
 
@@ -15,7 +16,8 @@ namespace NUnitTestProject1
 
         public void givenFirstName_WhenImProper_ShouldReturnFalse()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
+
             bool isValid = user.validateFirstName("P");
             Assert.False(isValid);
 
@@ -24,7 +26,8 @@ namespace NUnitTestProject1
         [Test]
         public void givenLastName_WhenProper_ShouldReturnTrue()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
+
             bool isValid = user.validateLastName("Puneet");
             Assert.True(isValid);
 
@@ -32,7 +35,8 @@ namespace NUnitTestProject1
 
         public void givenLastName_WhenImProper_ShouldReturnFalse()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
+
             bool isValid = user.validateLastName("P");
             Assert.False(isValid);
 
@@ -41,7 +45,8 @@ namespace NUnitTestProject1
         [Test]
         public void givenEmail_WhenProper_ShouldReturnTrue()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
+
             bool isValid = user.validateEmail("puneet@gmail.com");
             Assert.True(isValid);
 
@@ -49,7 +54,8 @@ namespace NUnitTestProject1
 
         public void givenEmail_WhenImProper_ShouldReturnFalse()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
+
             bool isValid = user.validateEmail("pun");
             Assert.False(isValid);
 
@@ -58,7 +64,8 @@ namespace NUnitTestProject1
         [Test]
         public void givenMobileNumber_WhenProper_ShouldReturnTrue()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
+
             bool isValid = user.validateMobileNumber("91 9899787676");
             Assert.True(isValid);
 
@@ -66,7 +73,8 @@ namespace NUnitTestProject1
 
         public void givenMobileNumber_WhenImProper_ShouldReturnFalse()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
+
             bool isValid = user.validateMobileNumber("91");
             Assert.False(isValid);
 
@@ -75,7 +83,8 @@ namespace NUnitTestProject1
         [Test]
         public void givenPassword_WhenProper_ShouldReturnTrue()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
+
             bool isValid = user.validatePassword("adAw@dse1d");
             Assert.True(isValid);
 
@@ -83,7 +92,8 @@ namespace NUnitTestProject1
 
         public void givenPassword_WhenImProper_ShouldReturnFalse()
         {
-            UserRegisteration user = new UserRegisteration();
+            UserRegisteration.UserRegisterationUtility user = new UserRegisteration.UserRegisterationUtility();
+
             bool isValid = user.validatePassword("ads");
             Assert.False(isValid);
 
